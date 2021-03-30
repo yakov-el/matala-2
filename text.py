@@ -4,8 +4,7 @@ def revword(word):
 
 
 def countword():
-    fname = input('Enter the file name: ')
-    handle=open(fname)
+    handle=open('text.txt','r')
     word = handle.readline()
     word = word.rstrip()
     counter=1
@@ -15,3 +14,7 @@ def countword():
             if revword(i) == word:
                     counter = counter+1 
     return(counter)
+
+
+
+
